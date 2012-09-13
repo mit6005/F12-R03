@@ -1,13 +1,13 @@
-public class StringSplit{
+public class StringSplit {
     /**
      * Split s1 around matches of s2 and return a String[] containing the
-     * results.
+     * results. Neither s1 nor s2 can be null or empty, and s2 must appear in s1
+     * at least once.  Return value is undefined for when s2 occurs at the
+     * beginning or end of s1.
      *
-     * @param s1 String to be split; requires s1 to not be null, and nonempty
-     * and it must contain s2.
-     * @param s2 String that will be split on; requires s2 to occur at least
-     * once in s1, nonempty, and s2 is not null
-     *@return String[] array of strings split on each instance of s2.
+     * @param s1 String to be split.
+     * @param s2 String to split on.
+     * @return Array of substrings of s1 appearing between instances of s2.
      */
     public static String[] splitString1(String s1, String s2) {
         throw new RuntimeException("not implemented");
@@ -15,12 +15,12 @@ public class StringSplit{
 
     /**
      * Split s1 around matches of s2 and return a String[] containing the
-     * results.
+     * results.  Neither s1 nor s2 may be null and s2 must appear in s1 at least
+     * once.
      *
-     * @param s1 String to be split; requires s1 to not be null and it must
-     * contain s2.
-     * @param s2 String that will be split on; requires s2 is not null.
-     * @return String[] array of strings split on each instance of s2
+     * @param s1 String to be split.
+     * @param s2 String to split on.
+     * @return Array of substrings of s1 appearing between instances of s2.
      */
     public static String[] splitString2(String s1, String s2) {
         throw new RuntimeException("not implemented");
@@ -28,12 +28,11 @@ public class StringSplit{
 
     /**
      * Split s1 around matches of s2 and return a String[] containing the
-     * results.
+     * results.  If s2 appears at the beginning of s1 ... ???
      *
-     * @param s1 String to be split
-     * @param s2 String that s1 is split on.
-     * @return String[] array of strings split on each instance of s2; empty
-     * array returned if s1 or s2 is null.
+     * @param s1 String to be split.
+     * @param s2 String to split on.
+     * @return Array of substrings of s1 appearing between instances of s2.
      */
     public static String[] splitString3(String s1, String s2) {
         throw new RuntimeException("not implemented");

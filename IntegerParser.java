@@ -1,4 +1,5 @@
 public class IntegerParser {
+    // wat do?
     public static int parseInt1(String intString, int base) {
         int number = 0;
         int nextVal = 0;
@@ -16,6 +17,7 @@ public class IntegerParser {
         return number;
     }
 
+    // wat do?
     public static int parseInt2(String intString, int base) {
         int number = 0;
         for (int i = 0; i < intString.length(); i++) {
@@ -41,6 +43,7 @@ public class IntegerParser {
         return number;
     }
 
+    // wat do?
     public static int parseInt3(String intString, int base) {
         int number = 0;
         for (int i = 0; i < intString.length(); i++) {
@@ -53,13 +56,13 @@ public class IntegerParser {
             } else if ('A' <= nextChar && nextChar <= 'A') {
                 nextVal = 10 + nextChar - 'A';
             } else {
-                throw new RuntimeException(String.format(
+                throw new NumberFormatException(String.format(
                             "Non-number character!  char %d: %s", i, nextChar));
             }
 
             // Number too large for base.
             if (nextVal >= base) {
-                throw new RuntimeException(String.format(
+                throw new NumberFormatException(String.format(
                             "Number character too large!  char %d: %s", i, nextChar));
             }
             number = number * base + nextVal;
